@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Database Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background: #333;
+            padding: 15px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+        .dashboard {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .card {
+            background: #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#login">Login</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#players">Manage Players</a>
+        <a href="#matches">Match Records</a>
+        <a href="#reports">Reports</a>
+    </div>
+
+    <div class="container" id="login">
+        <h2>Login</h2>
+        <div class="form-container">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+        </div>
+    </div>
+
+    <div class="container" id="dashboard">
+        <h2>Dashboard</h2>
+        <div class="dashboard">
+            <div class="card">Total Players: 50</div>
+            <div class="card">Matches Recorded: 120</div>
+            <div class="card">Top Players Updated</div>
+        </div>
+    </div>
+
+    <div class="container" id="players">
+        <h2>Manage Players</h2>
+        <div class="form-container">
+            <input type="text" placeholder="Player Name">
+            <input type="number" placeholder="Ranking">
+            <button>Add Player</button>
+            <button>Update Player</button>
+            <button>Delete Player</button>
+        </div>
+    </div>
+
+    <div class="container" id="matches">
+        <h2>Match Records</h2>
+        <p>Filter by date or player</p>
+        <input type="text" placeholder="Search Player">
+        <button>Search</button>
+    </div>
+
+    <div class="container" id="reports">
+        <h2>Reports & Analytics</h2>
+        <p>View player statistics and rankings</p>
+        <button>Generate Report</button>
+    </div>
+</body>
+</html>
